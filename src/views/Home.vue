@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="people_box">
+      <p :style="vStyle">{{people.boy}}</p>
+      <p>{{people.girl}}</p>
+    </div>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  export default{
+    data(){
+      return{
+        people:{
+          boy:"男の子",
+          girl:"女の子"
+        },
+        vStyle: {color:"bule"}
+      }
+    }
   }
-}
 </script>
+<style scoped>
+
+</style>
