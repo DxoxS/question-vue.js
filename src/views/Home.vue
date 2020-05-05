@@ -1,24 +1,23 @@
 <template>
   <div class="home">
-    <div class="people_box">
-      <p :style="vStyle">{{people.boy}}</p>
-      <p>{{people.girl}}</p>
-    </div>
+    <input v-model="getText" type="text" >
+    <Header : parentText="getText"></Header>
   </div>
 </template>
-<script>
-  export default{
-    data(){
-      return{
-        people:{
-          boy:"男の子",
-          girl:"女の子"
-        },
-        vStyle: {color:"bule"}
-      }
-    }
-  }
-</script>
-<style scoped>
 
-</style>
+<script>
+import Header from
+'../components/Header'
+export default{
+  data(){
+    return{
+      getText:'',
+    }
+  },
+  components:{
+    Header
+  }
+}
+</script>
+
+
