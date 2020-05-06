@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p>sidemain</p>
+        <p>sidemenus</p>
     </div>
 </template>

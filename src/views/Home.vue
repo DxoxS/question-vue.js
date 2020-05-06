@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <input v-model="getText" type="text" >
-    <Header : parentText="getText"></Header>
+    <Header :parentText="getText"></Header>
   </div>
 </template>
 

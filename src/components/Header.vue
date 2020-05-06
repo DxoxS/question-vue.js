@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <input type="subnit" @click="showText" placeholder="受け取る">
+        <input type="subｍit" @click="showText" value="受け取る">
         <p>{{show}}</p>
     </div>
 </template>
