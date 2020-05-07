@@ -8,9 +8,9 @@
                     <p class="news_date">2019/01/01</p>
                     <p class="news_title">ニュースタイトルがここには入ります。3月の決算報告書</p>
                 </div>
+                <div class="news-icon">news</div>
             </div>
         </div>
-        <div class="news-icon">news</div>
 
         <div id="hamburger">
             <span></span>
@@ -103,7 +103,7 @@ export default{
 /*         header         */
 /*------------------------*/
 #firstview{
-    height: 100%;
+    height: 1000px;
     background: url(../assets/img/eyecatch.jpg) no-repeat;
     background-size: cover;
     background-position:  center;
@@ -145,6 +145,8 @@ export default{
     padding: 0 15px;
 }
 .news-icon{
+    display: inline-block;
+
     background: #000;
     width: 20%;
     height: 70px;
