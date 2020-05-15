@@ -4,20 +4,38 @@
             <h1 class="header-logo">estra inc.</h1> 
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">works</a></li>
-                    <li><a href="#">price</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a v-on:click="clickHome()">home</a></li>
+                    <li><a v-on:click="clickAbout()">about</a></li>
+                    <li><a v-on:click="clickService()">service</a></li>
+                    <li><a v-on:click="clickWorks()">works</a></li>
+                    <li><a v-on:click="clickWorks()">price</a></li>
+                    <li><a v-on:click="clickContact()">contact</a></li>
                 </ul> 
             </nav>
         </div>
     </header>
 </template>
 <script>
-export default {
-
+export default{
+    methods:{
+        clickHome(){
+            alert('homeページへいきます')
+            this.$router.path('/')
+        },
+        clickAbout(){
+            alert('aboutページへいきます')
+            this.$router.path('/About')
+        },
+        clickService(){
+            alert('serviceへいきます')
+        },
+        clickWorks(){
+            alert('worksへいきます')
+        },
+        clickContact(){
+            alert('contactへいきます')
+        }
+    }
 }
 </script>
 <style scoped>
@@ -39,6 +57,7 @@ export default {
     }
     .header-nav a{
         color: #fff;
+        cursor: pointer;
     }
 
     @media screen and (max-width: 768px){

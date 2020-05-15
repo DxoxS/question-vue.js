@@ -1,9 +1,21 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+    <div id="app">
+        <Header></Header>
+        <router-view/>
+        <Footer></Footer>
+    </div>
 </template>
-<script></script>
+<script>
+    import Header from './components/Header'
+    import Footer from './components/Footer'
+
+    export default{
+        components:{
+            Header,
+            Footer
+        }
+    }
+</script>
 <style>
 @charset "UTF-8";
 

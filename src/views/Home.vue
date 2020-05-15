@@ -1,6 +1,5 @@
 <template>
     <div class="home">
-        <Header></Header>
         <div id="firstview">
             <p class="catchcopy fadein">機械ではできない仕事を</p>
             <div class="news flex fadein">
@@ -85,25 +84,17 @@
                 <a href="" class="common-btn contact-btn">お問い合わせへ</a>
             </div>
         </main>
-        <Footer></Footer>
     </div>
 </template>
 <script>
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-export default{
-    components:{
-        Header,
-        Footer
-    }
-}
+
 </script>
 <style scoped>
 /*------------------------*/
 /*         header         */
 /*------------------------*/
 #firstview{
-    height: 1000px;
+    height: 100vh;
     background: url(../assets/img/eyecatch.jpg) no-repeat;
     background-size: cover;
     background-position:  center;
